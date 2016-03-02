@@ -1,10 +1,10 @@
-var express = require('express');
-var app = express();
-var port = 8080;
-var bodyParser = require('body-parser');
-var session = require('express-session');
-var _ = require('lodash');
-var config = require('./config.js');
+var express = require('express')
+, app = express()
+, port = 8080
+, bodyParser = require('body-parser')
+, session = require('express-session')
+, _ = require('lodash')
+, config = require('./config.js');
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: true}));
