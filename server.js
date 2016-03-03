@@ -9,7 +9,11 @@ var express = require('express')
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use(session({secret: config.sessionSecret,resave: false, saveUninitialized: true}));
+app.use(session({
+      secret: config.sessionSecret
+    , resave: false
+    , saveUninitialized: true
+  }));
 
 console.log(config.sessionSecret);
 
