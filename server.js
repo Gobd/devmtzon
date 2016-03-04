@@ -15,8 +15,6 @@ app.use(session({
     , saveUninitialized: true
   }));
 
-console.log(config.sessionSecret);
-
 app.listen(port, function(){
   console.log('Listening on port ' + port);
 });
